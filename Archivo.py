@@ -16,8 +16,8 @@ for r, d, f in os.walk(thisdir): #Creo las carpetas
                 os.mkdir(r2)
 
             except FileExistsError:
-                #print("Ya existen las carpetas main y V01")
-                break
+                print("Ya existen las carpetas main y V01")
+                #break
 
 for r, d, f in os.walk(thisdir): #MODIFICO EL NOMBRE DE LOS ARCHIVOS
     for file in f:
@@ -40,7 +40,6 @@ for r, d, f in os.walk(thisdir): #MODIFICO EL NOMBRE DE LOS ARCHIVOS
 
 
             try:
-                pass
                 #shutil.move(ruta_nueva, r+"/main/V01")
                 shutil.move(ruta_nueva,r_destino)
             except:
