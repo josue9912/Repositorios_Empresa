@@ -24,22 +24,22 @@ for r, d, f in os.walk(thisdir): #CREO CARPETAS
             if file.endswith(".py"):
 
                 print(file)
-                ruta_antigua = os.path.join(r,file)
-                print(ruta_antigua)
+                old_root = os.path.join(r, file)
+                print(old_root)
 
-                nuevo_fichero = file.replace('jercicio','1')
-                ruta_nueva = os.path.join(r,nuevo_fichero)
-                print(ruta_nueva)
-                os.rename(ruta_antigua,ruta_nueva)
+                new_file = file.replace('jercicio', '1')
+                new_root = os.path.join(r, new_file)
+                print(new_root)
+                os.rename(old_root, new_root)
 
 
-                r_destino = os.path.join(r,"main","V01")
+                destination_root = os.path.join(r, "main", "V01")
                 print(r)
-                print(r_destino)
+                print(destination_root)
 
 
             try:
                 #MUEVO EL FICHERO A LA CARPETA NUEVA
-                shutil.move(ruta_nueva,r_destino)
+                shutil.move(new_root, destination_root)
             except:
                 print("Error")
