@@ -32,4 +32,4 @@ for r, d, f in os.walk(thisdir): #CREO CARPETAS
                 #MUEVO EL FICHERO A LA CARPETA NUEVA
                 shutil.move(new_root, destination_root)
             except:
-                print("Error")
+                print("Error ")
