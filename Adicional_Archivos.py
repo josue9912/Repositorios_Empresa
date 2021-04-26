@@ -37,7 +37,7 @@ for r, d, f in os.walk(thisdir):
             try:
                 shutil.move(ruta_py,ruta_main)
             except:
-                print("Error en la ruta")
+                print("Error en la ruta ")
 
 
 
