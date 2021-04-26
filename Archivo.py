@@ -38,4 +38,4 @@ for r, d, f in os.walk(thisdir): #MODIFICO EL NOMBRE DE LOS ARCHIVOS
 
                 shutil.move(ruta_nueva,r_destino)
             except:
-                print("Error")
+                print("Error ")
