@@ -15,6 +15,7 @@ for r, d, f in os.walk(thisdir): #Creo las carpetas
                 os.mkdir(r2)
 
             except FileExistsError:
+                break
                 print("Ya existen las carpetas main y V01")
 
 

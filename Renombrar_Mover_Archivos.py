@@ -15,7 +15,7 @@ for r, d, f in os.walk(thisdir): #CREO CARPETAS
 
             except FileExistsError:
                 print("Ya existen las carpetas main y V01")
-                #break
+                break
 
         for file in f: #MODIFICO EL NOMBRE DE LOS ARCHIVOS
 
