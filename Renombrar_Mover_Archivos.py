@@ -5,9 +5,7 @@ import shutil
 thisdir = "/Users/josuesantanagalvan/Desktop/Carpeta/Carpeta1/Carpeta2"
 
 for r, d, f in os.walk(thisdir): #CREO CARPETAS
-
         if 'CarpetaFinal' in r:
-            #print(r)
             try:
 
                 r1 = os.path.join(r, 'main')
@@ -23,20 +21,12 @@ for r, d, f in os.walk(thisdir): #CREO CARPETAS
 
             if file.endswith(".py"):
 
-                print(file)
                 old_root = os.path.join(r, file)
-                print(old_root)
-
                 new_file = file.replace('jercicio', '1')
                 new_root = os.path.join(r, new_file)
-                print(new_root)
+
                 os.rename(old_root, new_root)
-
-
                 destination_root = os.path.join(r, "main", "V01")
-                print(r)
-                print(destination_root)
-
 
             try:
                 #MUEVO EL FICHERO A LA CARPETA NUEVA
