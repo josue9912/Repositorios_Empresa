@@ -1,4 +1,8 @@
 import os
+try:
+    from os import scandir, walk
+except ImportError:
+    from scandir import scandir, walk
 
 path = r"C:\Users\jsantana\Downloads"
 dictionary = {}
